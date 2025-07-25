@@ -40,11 +40,11 @@ public class Appointment {
     return appointmentTime.plusHours(1);
   }
 
-  private LocalDate getAppointmentDate() {
+  public LocalDate getAppointmentDate() {
       return appointmentTime.toLocalDate();
   }
 
-  private LocalTime getAppointmentTimeOnly() {
+  public LocalTime getAppointmentTimeOnly() {
       return appointmentTime.toLocalTime();
   }
 
