@@ -17,29 +17,25 @@
 <!-- test1 -->
 
     <body>
-        <main class="main-content">
-            <div class="container">
-                <div class="wrapper">
-                    <div id="header"></div>
-                    <div id="footer"></div>
-      
-                </div>
-            </div>
-            <h2>Select Your Role</h2>
-            <button id="Admin_Button" onclick="">Admin</button>
-            <br>
-            <button id="Doctor_Button" onclick="">Doctor</button>
-            <br>
-            <button id="Patient_Button" onclick="">Patient</button>
-            <br>
-        </main>
-        <div id="modal" class="modal">
-            <br>
-            <button id="closeModal" onclick="">Close</button>
-            <br>  
-        </div>
+  <div class="container">
+    <div class="wrapper">
+    <div id="header"></div>
+    <main class="main-content">
+    <h2>Select Your <span>Role</span> </h2>
+    <button id="adminLogin" class="adminBtn">Admin</button>
+    <button onclick="selectRole('patient')">Patient</button>
+    <button id="doctorLogin" class="adminBtn">Doctor</button>
+    </main>
+    <div id="footer" ></div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
             
-        <script type="module" src="./js/services/index.js" defer></script>
+    <script type="module" src="./js/services/index.js" defer></script>
     </body>
 
 </html>

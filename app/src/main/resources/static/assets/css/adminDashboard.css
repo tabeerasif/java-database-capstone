@@ -32,6 +32,39 @@ h2 {
   margin-bottom: 50px;
 }
 
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+  color: #003e3e;
+  font-size: 28px;
+  margin: 0;
+}
+
+.dashboard-btn {
+  background-color: #015c5d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+  background-color: #003e3e;
+}
+
 .main-content {
   margin: 0 auto;
   background-image: url('../images/defineRole/index.png');
